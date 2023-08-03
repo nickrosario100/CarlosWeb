@@ -1,3 +1,5 @@
+import {bronze,gold, silver, wifi} from "./assets/images/index.js"
+
 const logotext = "Personal Trainer";
 const meta = {
     title: "Carlos Maccay",
@@ -8,11 +10,9 @@ const introdata = {
     title: "I’m Carlos Macaay",
     animated: {
         first: "I am a Fintess Trainer",
-        second: "I am gay",
-        third: "I develop mobile apps",
     },
     description: "dsk.",
-    your_img_url: "",
+    your_img_url: "https://photos.app.goo.gl/57FizjbcZgsW6jXF6",
 };
 
 const dataabout = {
@@ -20,32 +20,39 @@ const dataabout = {
     aboutme: "Experience.",
 };
 const worktimeline = [{
-        jobtitle: "Plan Type",
-        where: "Details:",
-        date: "Cost:",
+    plan: "Plans:",
+    details: "Details:",
+    cost: "Cost:",
+    sessions:"Sessions"
     },
     {
-        jobtitle: "Bronze",
-        where: "",
-        date: "$50 1/2 Hr.",
+        plan: "Bronze",
+        img:[bronze],
+        details: "",
+        cost: "$50 1/2 Hr.",
+        sessions:"Sessions"
     },
     {
-        jobtitle: "Silver",
-        where: "",
-        date: "$75 Hr.",
+        plan: "Silver",
+        img:[silver],
+        details: "",
+        cost: "$75 Hr.",
+        sessions:"Sessions"
     },
     {
-        jobtitle: "Gold",
-        where: "I train with you.",
-        date: "$100 Hr.",
+        plan: "Gold",
+        img:[gold],
+        details: "I train with you.",
+        cost: "$100 Hr.",
+        sessions:"Sessions"
     },
     {
-        jobtitle: "Online",
-        where:"Pdf file with all workouts including Sets, Reps and video guides",
-        date: "$75 Per Course",
+        plan: "Online",
+        img:[wifi],
+        details:"Pdf file with all workouts including Sets, Reps and video guides",
+        cost: "$75 Per Course",
+        sessions:"Sessions"
     },
-    //add times and
-    //
 ];
 
 const skills = [{
@@ -70,7 +77,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "name@domain.com",
     YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "desk",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",

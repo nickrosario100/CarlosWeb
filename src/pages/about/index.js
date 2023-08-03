@@ -45,9 +45,12 @@ export const About = () => {
                 {worktimeline.map((data, i) => {
                   return (
                     <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
+                      {data.img?(
+                      <img src={data.img} alt="" className="picture"/>):(<td></td>)}
+                      <th scope="row">{data.plan}</th>                     
+                      <td>{data.details}</td>
+                      <td>{data.sessions}</td>
+                      <td>{data.cost}</td>                     
                     </tr>
                   );
                 })}
