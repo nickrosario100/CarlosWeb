@@ -4,6 +4,7 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import { maclogo } from "../assets/images";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -28,7 +29,9 @@ const Headermain = () => {
           
           </div>
         </div>
-
+        <div id="content">
+        <img src={maclogo}  className="picture" alt=""></img>
+</div>
         <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
@@ -38,7 +41,7 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Progress</Link>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>

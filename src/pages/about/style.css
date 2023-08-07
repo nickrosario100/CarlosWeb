@@ -2,9 +2,9 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
-.picture{
-    width: 40px;
-    height: 40px;
+.icons{
+    width: 50px;
+    height: auto;
 }
 
 .table td,

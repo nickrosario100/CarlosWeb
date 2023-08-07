@@ -1,4 +1,4 @@
-import {bronze,gold, silver, wifi} from "./assets/images/index.js"
+import {bronze,gold, silver, wifi, mainimg} from "./assets/images/index.js"
 
 const logotext = "Personal Trainer";
 const meta = {
@@ -9,10 +9,10 @@ const meta = {
 const introdata = {
     title: "I’m Carlos Macaay",
     animated: {
-        first: "I am a Fintess Trainer",
+        first: "Are you ready for the MacMethod?",
     },
-    description: "dsk.",
-    your_img_url: "https://photos.app.goo.gl/57FizjbcZgsW6jXF6",
+    description: "I am an inspiring fitness influencer that started my fitness journey in 2017. Over the years I have grown an extreme passion for fitness, and I strive to aspire others to start their own journey.",
+    your_img_url: [mainimg],
 };
 
 const dataabout = {
@@ -86,10 +86,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    instagram: "https://www.instagram.com/macmethod_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    tiktiok: "https://www.tiktok.com/@macmethodlifts?_t=8ecuMCwMNFy&_r=1",
+    youtube:"https://www.youtube.com/@Mac_Method",
 };
 export {
     meta,

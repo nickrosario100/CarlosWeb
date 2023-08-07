@@ -46,7 +46,7 @@ export const About = () => {
                   return (
                     <tr key={i}>
                       {data.img?(
-                      <img src={data.img} alt="" className="picture"/>):(<td></td>)}
+                      <img src={data.img} alt="" className="icons"/>):(<td></td>)}
                       <th scope="row">{data.plan}</th>                     
                       <td>{data.details}</td>
                       <td>{data.sessions}</td>
