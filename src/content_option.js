@@ -11,7 +11,7 @@ import {bronze,
 
 const logotext = "Personal Trainer";
 const meta = {
-    title: "Carlos Maccay",
+    title: "Mac Method",
     description: "Desc",
 };
 
