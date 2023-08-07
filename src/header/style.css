@@ -15,7 +15,7 @@
    .image-blurred-edge {
     width: 200px;
     height: 200px;
-    box-shadow: 0 0 30px 30px #0a0a0a inset;
+    box-shadow: 0 0 50px 50px #0a0a0a inset;
   }
 
 .site__header {
