@@ -43,8 +43,8 @@
 }
 
 .stick_follow_icon p:after {
-    top: 9px;
-    right: -20px;
+    top: 10px;
+    right: -30px;
     width: 40px;
     height: 1px;
     content: "";
@@ -73,7 +73,7 @@
         white-space: nowrap;
         position: relative;
         transform: unset;
-        font-size: 17px;
+        font-size: 30px;
         margin-right: 65px;
     }
     .stick_follow_icon ul {

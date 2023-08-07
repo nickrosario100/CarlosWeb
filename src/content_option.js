@@ -1,4 +1,13 @@
-import {bronze,gold, silver, wifi, mainimg} from "./assets/images/index.js"
+import {bronze,
+    gold,
+    silver,
+    wifi,
+    mainimg,
+    progress1,
+    progress2,
+    progress3,
+    progress4
+} from "./assets/images/index.js"
 
 const logotext = "Personal Trainer";
 const meta = {
@@ -68,8 +77,23 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: [progress1],
+        description: "Description",
+        link: "#",
+    },
+    {
+        img: [progress2],
+        description: "Description",
+        link: "#",
+    },
+    {
+        img: [progress3],
+        description: "Description",
+        link: "#",
+    },
+    {
+        img: [progress4],
+        description: "Description",
         link: "#",
     },
 ];
