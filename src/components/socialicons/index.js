@@ -25,9 +25,9 @@ export const Socialicons = (params) => {
             </a>
           </li>
         )}
-        {socialprofils.tiktiok && (
+        {socialprofils.tiktok && (
           <li>
-            <a href={socialprofils.tiktiok}>
+            <a href={socialprofils.tiktok}>
               <FaTiktok />
             </a>
           </li>

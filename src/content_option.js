@@ -111,7 +111,7 @@ const contactConfig = {
 
 const socialprofils = {
     instagram: "https://www.instagram.com/macmethod_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
-    tiktiok: "https://www.tiktok.com/@macmethodlifts?_t=8ecuMCwMNFy&_r=1",
+    tiktok: "https://www.tiktok.com/@macmethodlifts?_t=8ecuMCwMNFy&_r=1",
     youtube:"https://www.youtube.com/@Mac_Method",
 };
 export {
