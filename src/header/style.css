@@ -12,11 +12,17 @@
     width: auto;
    }
 
-   .image-blurred-edge {
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 50px 50px #0a0a0a inset;
-  }
+  .image-blurred-edge {
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.1),
+    
+    0 0 40px rgba(0,0,0,0.1),
+    
+    0 0 60px rgba(0,0,0,0.1),
+    
+    0 0 80px rgba(0,0,0,0.1);
+    
+    }
 
 .site__header {
     top: 10px;
