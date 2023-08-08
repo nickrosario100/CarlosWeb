@@ -6,7 +6,7 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
+  // skills,
   services,
 } from "../../content_option";
 
@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Plans</h3>
+            <h1 className="color_sec py-4">Plans</h1>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -58,7 +58,7 @@ export const About = () => {
             </table>
           </Col>
         </Row>
-        <Row className="sec_sp">
+        {/* <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
@@ -81,17 +81,21 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row>
+        </Row> */}
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h1 className="color_sec py-4">Plans</h1>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
+                  <h2 className="service__title">{data.img?(
+                      <img src={data.img} alt="" className="othericons"/>):(<td></td>)}{data.title}</h2>
                   <p className="service_desc">{data.description}</p>
+                  <p className="service_desc">{data.sessions}</p>
+                  <p className="service_desc">{data.timePerSession}</p>
+                  <p className="service_desc">{data.cost}</p>
                 </div>
               );
             })}
@@ -101,3 +105,28 @@ export const About = () => {
     </HelmetProvider>
   );
 };
+
+
+{/* <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Plans</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {worktimeline.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      {data.img?(
+                      <img src={data.img} alt="" className="icons"/>):(<td></td>)}
+                      <th scope="row">{data.plan}</th>                     
+                      <td>{data.details}</td>
+                      <td>{data.sessions}</td>
+                      <td>{data.cost}</td>                     
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row> */}

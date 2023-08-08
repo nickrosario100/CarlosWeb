@@ -29,7 +29,7 @@ const dataabout = {
     aboutme: "Experience.",
 };
 const worktimeline = [{
-    plan: "Plans:",
+    plan: "",
     details: "Details:",
     cost: "Cost:",
     sessions:"Sessions"
@@ -64,15 +64,43 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Cardio",
-        value: 90,
-    },
-];
+// const skills = [{
+//         name: "Cardio",
+//         value: 90,
+//     },
+// ];
 
 const services = [{
-        title: "Placeholder",
-        description: "random",
+    img: [bronze],
+    title: "Bronze",
+    description: "Details on bronze plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+    },
+    {
+    img: [silver],
+    title: "Silver",
+    description: "Details on bronze plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+    },
+    {
+    img: [gold],
+    title: "Gold",
+    description: "Details on bronze plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+    },
+    {
+    img: [wifi],
+    title: "Online",
+    description: "Details on bronze plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
     },
 ];
 
@@ -119,7 +147,7 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
+    // skills,
     services,
     introdata,
     contactConfig,
