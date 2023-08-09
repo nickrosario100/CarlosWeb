@@ -142,12 +142,47 @@ const socialprofils = {
     tiktok: "https://www.tiktok.com/@macmethodlifts?_t=8ecuMCwMNFy&_r=1",
     youtube:"https://www.youtube.com/@Mac_Method",
 };
+
+const plans = [{
+    picture:[bronze],
+    title: "Bronze:",
+    description: "Details on bronze plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+},
+{
+    picture:[silver],
+    title: "Silver:",
+    description: "Details on silver plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+},
+{
+    picture:[gold],
+    title: "Gold:",
+    description: "Details on gold plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+},
+{
+    picture:[wifi],
+    title: "Online:",
+    description: "Details on online plan",
+    sessions:"amount of sessions",
+    timePerSession:"1/2 Hour",
+    cost:"$70",
+},
+]
 export {
     meta,
     dataabout,
     dataportfolio,
     worktimeline,
     // skills,
+    plans,
     services,
     introdata,
     contactConfig,

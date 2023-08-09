@@ -8,6 +8,7 @@ import {
   worktimeline,
   // skills,
   services,
+  plans
 } from "../../content_option";
 
 export const About = () => {
@@ -57,6 +58,7 @@ export const About = () => {
               </tbody>
             </table>
           </Col>
+          
         </Row>
         {/* <Row className="sec_sp">
           <Col lg="5">
@@ -100,6 +102,24 @@ export const About = () => {
               );
             })}
           </Col>
+        </Row>
+        <Row>
+        <div className="mb-5 pc_items_ho">
+          {plans.map((data, i) => {
+            return (
+              <div key={i} className="pc_item">
+                <img src={data.picture} alt="" />
+                <div className="content">
+                <h1 className="service_desc">{data.title}</h1>
+                <p className="service_desc">{data.description}</p>
+                  <p className="service_desc">{data.sessions}</p>
+                  <p className="service_desc">{data.timePerSession}</p>
+                  <p className="service_desc">{data.cost}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
         </Row>
       </Container>
     </HelmetProvider>
