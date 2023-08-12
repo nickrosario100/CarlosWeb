@@ -149,7 +149,7 @@ const plans = [{
     description: "Details on bronze plan",
     sessions:"amount of sessions",
     timePerSession:"1/2 Hour",
-    cost:"$70",
+    cost:"70",
 },
 {
     picture:[silver],
@@ -157,7 +157,7 @@ const plans = [{
     description: "Details on silver plan",
     sessions:"amount of sessions",
     timePerSession:"1/2 Hour",
-    cost:"$70",
+    cost:"70",
 },
 {
     picture:[gold],
@@ -165,7 +165,7 @@ const plans = [{
     description: "Details on gold plan",
     sessions:"amount of sessions",
     timePerSession:"1/2 Hour",
-    cost:"$70",
+    cost:"70",
 },
 {
     picture:[wifi],
@@ -173,7 +173,7 @@ const plans = [{
     description: "Details on online plan",
     sessions:"amount of sessions",
     timePerSession:"1/2 Hour",
-    cost:"$70",
+    cost:"70",
 },
 ]
 export {
