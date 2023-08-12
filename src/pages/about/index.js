@@ -18,7 +18,7 @@ export const About = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>  {meta.title}| Plans </title>
+          <title>  {meta.title} | Plans </title>
           <meta name="description" content={meta.description} />
         </Helmet><Col lg="8">
             <h1 className="display-4 mb-4">Plans</h1>
