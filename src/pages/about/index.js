@@ -22,8 +22,8 @@ export const About = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Plans</h1>
+        <Col lg="8">
+            <h1 className="display-4 mb-4">About Me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -104,6 +104,10 @@ export const About = () => {
             })}
           </Col>
         </Row> */}
+        <Col lg="8">
+            <h1 className="display-4 mb-4">Plans</h1>
+            <hr className="t_border my-4 ml-0 text-left" />
+          </Col>
         <div className="container3">
         <Row className="container2">
         {plans.map((data, i) => {
