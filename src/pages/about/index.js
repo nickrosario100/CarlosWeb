@@ -20,7 +20,67 @@ export const About = () => {
           <meta charSet="utf-8" />
           <title>  {meta.title}| Plans </title>
           <meta name="description" content={meta.description} />
-        </Helmet>
+        </Helmet><Col lg="8">
+            <h1 className="display-4 mb-4">Plans</h1>
+            <hr className="t_border my-4 ml-0 text-left" />
+          </Col>
+        <div className="container3">
+        <Row className="container2">
+        {plans.map((data, i) => {
+            return (
+        <div key={i} class="mx-3 mb-4 pack-container text ">
+  <div class="header">
+    <p class="title">
+    {data.title}
+    </p>
+    <div class="price-container">
+      <span>$</span>{data.cost}
+      <span>/mo</span>
+    </div>
+  </div>
+  <div>
+    <ul class="lists">
+      <li class="list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>
+        {data.sessions}
+        </p>
+      </li>
+      <li class="list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>
+        {data.timePerSession}
+        </p>
+      </li>
+      <li class="list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>
+        {data.description}
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="button-container">
+    <Link to="/contact">
+    <button type="button" >
+      Get Started
+    </button></Link>
+  </div>
+</div>);
+          })}
+        </Row></div>
         <Row className="mb-5 mt-3 pt-md-3">
         <Col lg="8">
             <h1 className="display-4 mb-4">About Me</h1>
@@ -104,67 +164,7 @@ export const About = () => {
             })}
           </Col>
         </Row> */}
-        <Col lg="8">
-            <h1 className="display-4 mb-4">Plans</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        <div className="container3">
-        <Row className="container2">
-        {plans.map((data, i) => {
-            return (
-        <div key={i} class="mx-3 mb-4 pack-container text ">
-  <div class="header">
-    <p class="title">
-    {data.title}
-    </p>
-    <div class="price-container">
-      <span>$</span>{data.cost}
-      <span>/mo</span>
-    </div>
-  </div>
-  <div>
-    <ul class="lists">
-      <li class="list">
-        <span>
-          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-          </svg>
-        </span>
-        <p>
-        {data.sessions}
-        </p>
-      </li>
-      <li class="list">
-        <span>
-          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-          </svg>
-        </span>
-        <p>
-        {data.timePerSession}
-        </p>
-      </li>
-      <li class="list">
-        <span>
-          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
-          </svg>
-        </span>
-        <p>
-        {data.description}
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="button-container">
-    <Link to="/contact">
-    <button type="button" >
-      Buy Now
-    </button></Link>
-  </div>
-</div>);
-          })}
-        </Row></div>
+        
       </Container>
     </HelmetProvider>
   );
